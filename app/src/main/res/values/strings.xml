@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Button-Counter-Albertsen</string>
+    <string name="increment">+1</string>
+    <string name="decrement">-1</string>
+    <string name="reset">Reset</string>
+    <string name="initialCount">0</string>
+    <!--<integer name="count">0</integer>-->
 </resources>
