@@ -19,10 +19,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        count = savedInstanceState.getInt("count");
+
         inc = findViewById(R.id.incrementButton);
         dec = findViewById(R.id.decrementButton);
         res = findViewById(R.id.resetButton);
         test = findViewById(R.id.counter);
+
+        test.setText(Integer.toString(count));
 
         inc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,5 +56,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("count", count);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        count = savedInstanceState.getInt("count");
+        test.setText(Integer.toString(count));
     }
 }

@@ -3,6 +3,8 @@
     <string name="increment">+1</string>
     <string name="decrement">-1</string>
     <string name="reset">Reset</string>
-    <string name="initialCount">0</string>
+    <string name="pink">#ffebee</string>
+    <string name="myTitle">Button Counter</string>
+    <!--<string name="initialCount">0</string>-->
     <!--<integer name="count">0</integer>-->
 </resources>
